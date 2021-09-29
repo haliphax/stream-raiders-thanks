@@ -6,7 +6,7 @@ bot will respond to epic/legendary unit placement announcements from
 
 Here's the URL you need to use:
 
-https://haliphax.github.io/sr-thanks/?username=USER&channel=CHANNEL&includeUsername=1&oauth=TOKEN
+https://haliphax.github.io/stream-raiders-thanks/?username=USER&channel=CHANNEL&includeUsername=1&oauth=TOKEN
 
 You will need to replace the token values.
 - `USER` is the bot's username (or your username if you are not using a
