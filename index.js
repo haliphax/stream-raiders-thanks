@@ -32,11 +32,14 @@ twitch.on('message', (channel, tags, message, self) => {
 	if (tags.username == 'streamcaptainbot'
 		&& message.indexOf(' just placed a') >= 0)
 	{
-		const choice = Math.floor(Math.random() * RESPONSES.length);
-		const who = message.substring(0, message.indexOf(' '));
-		const resp = RESPONSES[choice] + (qs.includeUsername ? ` ${who}` : '');
+		const random = Math.floor(Math.random() * RESPONSES.length);
+		const response = RESPONSES[random];
+		const who = qs.includeUsername
+			? message.substring(0, message.indexOf(' '))
+			: '';
+		const text = `${response} ${who}`.trim();
 
-		twitch.say(channel, resp);
+		twitch.say(channel, text);
 	}
 });
 
