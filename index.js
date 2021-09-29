@@ -16,7 +16,8 @@ const RESPONSES = [
 	'VoteYea',
 ];
 
-const qs = Object.fromEntries( window.location.href.split('?')[1].split('&').map(v => v.split('=')));
+const qs = Object.fromEntries(
+	window.location.href.split('?')[1].split('&').map(v => v.split('=')));
 const twitch = new tmi.Client({
 	channels: [qs.channel],
 	identity: {
