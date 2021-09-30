@@ -15,7 +15,7 @@ You will need to replace the token values.
 - `TOKEN` is your OAuth token, which you can obtain using the
   [Twitch Token Generator]
 
-If you don't want for the username of the player to be included in the
+If you don't want the username of the player to be included in the
 automated response, remove `&includeUsername=1` from the URL.
 
 You can either load the page up in a tab as you normally would any other
